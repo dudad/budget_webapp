@@ -1,0 +1,21 @@
+{% extends 'budget/layout.html' %}
+
+{% block content %}
+<h3>specific ouctome</h3>
+<div class="card">
+    <div class="card-content">
+        <ul class="collection">
+            <li class="collection-item">category: {{outcome.category}}</li>
+            <li class="collection-item">subcategory: {{outcome.subcategory}}</li>
+            <li class="collection-item">value: {{outcome.value}}</li>
+            <li class="collection-item">account: {{outcome.subcategory}}</li>
+            <li class="collection-item">date: {{outcome.happend_at}}</li>
+            <li class="collection-item">description: {{outcome.description}}</li>
+        </ul>
+    </div>
+    <div class="card-action">
+        {{outcome.created_at}}
+    </div>
+</div>
+<a href="/budget" class="btn">Go back</a>
+{% endblock %}
